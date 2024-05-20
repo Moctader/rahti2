@@ -18,6 +18,7 @@ def index():
     ret = {
         'msg': 'Rahti Flask demo works.',
         'port': PORT,   
+        'env_var': os.environ.get('ENV_VAR', 'not working'), # 'ENV_VAR' is the name of the environment variable
         'env': os.environ.get('ENV_VAR', 'not working'), 
         'method': request.method
     }
